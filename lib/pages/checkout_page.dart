@@ -162,7 +162,9 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               ElevatedButton(
                                 onPressed: () => Navigator.pushNamed(
                                     context, UserAddressPage.routeName),
-                                child: const Text('Change'),
+                                child: Text(addressM == null
+                                    ? 'Give Address'
+                                    : 'Change'),
                               )
                             ],
                           ),
